@@ -1,5 +1,5 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.68.
+signed via the Module::Signature module, version 0.70.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
@@ -14,13 +14,16 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 549331e86e87803f15ca812e156a55cb7a560801 COPYRIGHT
-SHA1 148a946a2220d6ff78cb22b92394fba47e6030a9 Changes
-SHA1 58e47fed556f626572681c48158a3ecd44ce179d HACKING
+SHA1 294505f858f11dd062e9916e3f50d88210a9ef54 CONTRIBUTING
+SHA1 d920b4c08434ec039b4f5dda0e6fe8433f018984 COPYRIGHT
+SHA1 9e307a5415ca4fa0a76a08bd7236f23f15544ea8 CREDITS
+SHA1 ff7220b489aacc3154e4caa4bb0379fbaf87a75b Changes
 SHA1 937d452c5c4069f4cda9ffaf45a33f1eb5f060e8 LICENSE
-SHA1 0922a9def02d78653e17500446bde9fd5d869b22 MANIFEST
-SHA1 7a0df35d40d8940501bbc0edcd7281089aa1507d META.yml
+SHA1 5d8261bc341850ab7bfae12891d19119eaadbb30 MANIFEST
+SHA1 f352b3d50db5d5cb2599e0cc399cbc802d4e7f50 META.ttl
+SHA1 eb62c0e90d4539b13336b5181d86237033537b30 META.yml
 SHA1 0cb015a9120aa0aa7d98fced2ee00b5ab78a02d0 Makefile.PL
+SHA1 6e5cddd493fdb94a38c244e9ef7024973dc2193e MooseX-ConstructInstance-0.004.tar.gz
 SHA1 484880a4f81fd4643222d2bbd15d316a82dbbb71 README
 SHA1 ec8297540c190743d722ff694d01ddf20e85d83b examples/basic.pl
 SHA1 06c410f05488c1612ed66b06d3a86b2580581e4a inc/Module/AutoInstall.pm
@@ -34,28 +37,25 @@ SHA1 66d3d335a03492583a3be121a7d888f63f08412c inc/Module/Install/Include.pm
 SHA1 b62ca5e2d58fa66766ccf4d64574f9e1a2250b34 inc/Module/Install/Makefile.pm
 SHA1 1aa925be410bb3bfcd84a16985921f66073cc1d2 inc/Module/Install/Metadata.pm
 SHA1 3b9281ddf7dd6d6f5de0a9642c69333023193c80 inc/Module/Install/Package.pm
-SHA1 9de7b5129351499c048328dfa718d0eab557cf30 inc/Module/Install/TrustMetaYml.pm
+SHA1 41f76ff6b39368a65da86377e43b34bacc2fb0eb inc/Module/Install/TrustMetaYml.pm
 SHA1 e4196994fa75e98bdfa2be0bdeeffef66de88171 inc/Module/Install/Win32.pm
 SHA1 c3a6d0d5b84feb3280622e9599e86247d58b0d18 inc/Module/Install/WriteAll.pm
 SHA1 26d58a041cd6b3d21db98b32e8fd1841aae21204 inc/Module/Package.pm
-SHA1 c18deb3025b83dda8ac7c97f1e29599e1d2c7378 inc/Module/Package/Dist/RDF.pm
-SHA1 0e0eed2e69d9583081868cf4f220068d0a018568 inc/Scalar/Util.pm
+SHA1 5a2f84a7a82eee0d1e5ed3628fe503a608efc10f inc/Module/Package/Dist/RDF.pm
 SHA1 feb933cefe2e3762e8322bd6071a2499f3440da1 inc/YAML/Tiny.pm
-SHA1 8105c0510a773b56840995fb4dd2dc64fe9ddaee inc/unicore/Name.pm
-SHA1 36df501c7c9b73c282c5174ed54d8283b2f2cbf2 inc/utf8.pm
-SHA1 9ed2d2c22288eb5e3ad57bb53dd2b763cc1c168d lib/MooseX/ConstructInstance.pm
-SHA1 500d3c13cd83717893801d4a9da9022fb56f5672 meta/changes.pret
-SHA1 952911a4d6d7f6f533e5610143b60730702450a3 meta/doap.pret
+SHA1 d9e3300cbe58c518ba96eb52297e4712cd90db76 lib/MooseX/ConstructInstance.pm
+SHA1 032fb5ff19ef1970c92b2d2d7b1788393e3a702e meta/changes.pret
+SHA1 66631af09abca5d91885941d7b105eec831cab6b meta/doap.pret
 SHA1 a295774d8332537378590fec1193d2a3a03e119c meta/makefile.pret
 SHA1 a151cff74b5f29c00381a14d4ec8726e3763b6b2 meta/people.pret
 SHA1 853d0e55754bff05d70d7ffd6b4b32e86fb9985d t/01basic.t
 SHA1 ddd380ad53ef2893518896a18a6609abf7a2f7f9 t/02moo.t
 SHA1 32ff7beee23fae2c1567f885a28c719c5a826b2b t/03moose.t
-SHA1 3e3c096c8013919a3414acf7aec0d2b999ad4bfc t/04homebrew.t
+SHA1 bb81729e50ef752d6c97a9e34da52a8b656d5d3c t/04homebrew.t
 -----BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.10 (GNU/Linux)
+Version: GnuPG v1.4.12 (GNU/Linux)
 
-iEUEARECAAYFAlDqGxgACgkQzr+BKGoqfTmNkACXXr4LV4Wn+LfIJfY+THjl42A/
-8wCgmGahtdE17iFPygWCY2ge9XQjX4g=
-=U9zR
+iEYEARECAAYFAlHJpOoACgkQzr+BKGoqfTkbAACfUds8Wm/HIQ0IJWFI0cshzvfm
+gRAAoK9R0yTG+W0UYw3Uyd4/BuJDfWWq
+=3OxW
 -----END PGP SIGNATURE-----

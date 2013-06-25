@@ -3,85 +3,77 @@ Upstream-Name: MooseX-ConstructInstance
 Upstream-Contact: Toby Inkster <tobyink@cpan.org>
 Source: https://metacpan.org/release/MooseX-ConstructInstance
 
-Files: COPYRIGHT
-Copyright: None
-License: public-domain
-Comment: This file! Automatically generated.
+Files: CONTRIBUTING
+ CREDITS
+ Changes
+ LICENSE
+ MANIFEST.SKIP
+ META.ttl
+ Makefile.PL
+ MooseX-ConstructInstance-0.004.tar.gz
+ README
+ meta/changes.pret
+ meta/doap.pret
+ meta/makefile.pret
+ meta/people.pret
+Copyright: Unknown
+License: Unknown
 
-Files: examples/basic.pl
-Copyright: This software is copyright (c) 2013 by Toby Inkster.
+Files: lib/MooseX/ConstructInstance.pm
+ t/01basic.t
+ t/02moo.t
+ t/03moose.t
+ t/04homebrew.t
+Copyright: This software is copyright (c) 2012-2013 by Toby Inkster.
 License: GPL-1.0+ or Artistic-1.0
 
 Files: inc/Module/Install.pm
+ inc/Module/Install/Include.pm
+ inc/Module/Install/Metadata.pm
 Copyright: Copyright 2002 - 2012 Brian Ingerson, Audrey Tang and Adam Kennedy.
-License: GPL-1.0+ or Artistic-1.0
-
-Files: inc/Module/Install/Base.pm
-Copyright: Copyright 2003, 2004 by Audrey Tang <autrijus@autrijus.org>.
-License: GPL-1.0+ or Artistic-1.0
-
-Files: inc/Module/Install/Include.pm
-Copyright: Copyright 2002 - 2012 Brian Ingerson, Audrey Tang and Adam Kennedy.
-License: GPL-1.0+ or Artistic-1.0
-
-Files: inc/Module/Install/Makefile.pm
-Copyright: Copyright 2002, 2003, 2004 Audrey Tang and Brian Ingerson.
-License: GPL-1.0+ or Artistic-1.0
-
-Files: inc/Module/Install/Metadata.pm
-Copyright: Copyright 2002 - 2012 Brian Ingerson, Audrey Tang and Adam Kennedy.
-License: GPL-1.0+ or Artistic-1.0
-
-Files: inc/Module/Install/Package.pm
-Copyright: Copyright (c) 2011. Ingy doet Net.
 License: GPL-1.0+ or Artistic-1.0
 
 Files: inc/Module/Install/TrustMetaYml.pm
+ inc/Module/Package/Dist/RDF.pm
 Copyright: This software is copyright (c) 2011-2012 by Toby Inkster.
-License: GPL-1.0+ or Artistic-1.0
-
-Files: inc/Scalar/Util.pm
-Copyright: Copyright (c) 1997-2007 Graham Barr <gbarr@pobox.com>. All rights reserved. Copyright (c) 1999 Tuomas J. Lukka <lukka@iki.fi>. All rights reserved.
 License: GPL-1.0+ or Artistic-1.0
 
 Files: inc/YAML/Tiny.pm
 Copyright: Copyright 2006 - 2012 Adam Kennedy.
 License: GPL-1.0+ or Artistic-1.0
 
-Files: inc/unicore/Name.pm
-Copyright: 1993-2012, Larry Wall and others
+Files: inc/Module/Install/Package.pm
+Copyright: Copyright (c) 2011. Ingy doet Net.
 License: GPL-1.0+ or Artistic-1.0
 
-Files: inc/utf8.pm
-Copyright: 1993-2012, Larry Wall and others
+Files: examples/basic.pl
+Copyright: This software is copyright (c) 2013 by Toby Inkster.
 License: GPL-1.0+ or Artistic-1.0
 
-Files: lib/MooseX/ConstructInstance.pm
-Copyright: This software is copyright (c) 2012-2013 by Toby Inkster.
+Files: COPYRIGHT
+Copyright: None
+License: public-domain
+Comment: This file! Automatically generated.
+
+Files: inc/Module/Install/Makefile.pm
+Copyright: Copyright 2002, 2003, 2004 Audrey Tang and Brian Ingerson.
 License: GPL-1.0+ or Artistic-1.0
 
-Files: t/01basic.t
-Copyright: This software is copyright (c) 2012-2013 by Toby Inkster.
+Files: inc/Module/Install/Base.pm
+Copyright: Copyright 2003, 2004 by Audrey Tang <autrijus@autrijus.org>.
 License: GPL-1.0+ or Artistic-1.0
 
-Files: t/02moo.t
-Copyright: This software is copyright (c) 2012-2013 by Toby Inkster.
-License: GPL-1.0+ or Artistic-1.0
-
-Files: t/03moose.t
-Copyright: This software is copyright (c) 2012-2013 by Toby Inkster.
-License: GPL-1.0+ or Artistic-1.0
-
-Files: t/04homebrew.t
-Copyright: This software is copyright (c) 2012-2013 by Toby Inkster.
-License: GPL-1.0+ or Artistic-1.0
-
-Files: Changes HACKING LICENSE MANIFEST.SKIP Makefile.PL README inc/Module/Package/Dist/RDF.pm meta/changes.pret meta/doap.pret meta/makefile.pret meta/people.pret
-Copyright: Unknown
-License: Unknown
-
-License: GPL-1.0+ or Artistic-1.0
- This software is copyright (c) 2013 by the copyright holder(s).
+License: Artistic-1.0
+ This software is Copyright (c) 2013 by the copyright holder(s).
  
- This is free software; you can redistribute it and/or modify it under
- the same terms as the Perl 5 programming language system itself.
+ This is free software, licensed under:
+ 
+   The Artistic License 1.0
+
+License: GPL-1.0
+ This software is Copyright (c) 2013 by the copyright holder(s).
+ 
+ This is free software, licensed under:
+ 
+   The GNU General Public License, Version 1, February 1989
+

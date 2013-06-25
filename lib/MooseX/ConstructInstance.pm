@@ -26,7 +26,7 @@ our @ISA = do {
 
 BEGIN {
 	$MooseX::ConstructInstance::AUTHORITY = 'cpan:TOBYINK';
-	$MooseX::ConstructInstance::VERSION   = '0.003';
+	$MooseX::ConstructInstance::VERSION   = '0.004';
 }
 
 # If push comes to shove, you can locally change the name
@@ -42,6 +42,12 @@ sub construct_instance {
 1;
 
 __END__
+
+=pod
+
+=encoding utf8
+
+=for stopwords backlinks
 
 =head1 NAME
 
