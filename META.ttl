@@ -50,6 +50,7 @@ dist:project
 	doap:release      dist:v_0-002;
 	doap:release      dist:v_0-003;
 	doap:release      dist:v_0-004;
+	doap:release      dist:v_0-005;
 	doap:repository   [
 		a doap:GitRepository;
 		doap:browse <https://github.com/tobyink/p5-moosex-constructinstance>;
@@ -114,6 +115,21 @@ dist:v_0-004
 	dcs:released-by   cpan:tobyink;
 	doap:file-release <http://backpan.cpan.org/authors/id/T/TO/TOBYINK/MooseX-ConstructInstance-0.004.tar.gz>;
 	doap:revision     "0.004"^^xsd:string.
+
+dist:v_0-005
+	a                 doap:Version;
+	dc:identifier     "MooseX-ConstructInstance-0.005"^^xsd:string;
+	dc:issued         "2013-06-30"^^xsd:date;
+	dcs:changeset     [
+		dcs:item [
+			a dcs:Bugfix;
+			a dcs:Packaging;
+			rdfs:label "MooseX-ConstructInstance-0.004 bundled a tarball of MooseX-ConstructInstance-0.004.";
+		];
+	];
+	dcs:released-by   cpan:tobyink;
+	doap:file-release <http://backpan.cpan.org/authors/id/T/TO/TOBYINK/MooseX-ConstructInstance-0.005.tar.gz>;
+	doap:revision     "0.005"^^xsd:string.
 
 cpan:tobyink
 	a                 foaf:Person;

@@ -30,7 +30,6 @@ meta/changes.pret
 meta/doap.pret
 meta/makefile.pret
 meta/people.pret
-MooseX-ConstructInstance-0.004.tar.gz
 README
 t/01basic.t
 t/02moo.t

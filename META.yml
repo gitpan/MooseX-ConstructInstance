@@ -34,4 +34,4 @@ resources:
   homepage: https://metacpan.org/release/MooseX-ConstructInstance
   license: http://dev.perl.org/licenses/
   repository: https://github.com/tobyink/p5-moosex-constructinstance
-version: 0.004
+version: 0.005
