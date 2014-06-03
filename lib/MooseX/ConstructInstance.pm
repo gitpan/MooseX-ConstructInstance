@@ -26,7 +26,7 @@ our @ISA = do {
 
 BEGIN {
 	$MooseX::ConstructInstance::AUTHORITY = 'cpan:TOBYINK';
-	$MooseX::ConstructInstance::VERSION   = '0.005';
+	$MooseX::ConstructInstance::VERSION   = '0.006';
 }
 
 # If push comes to shove, you can locally change the name
@@ -36,6 +36,25 @@ our $CONSTRUCTOR = 'new';
 
 sub construct_instance {
 	my (undef, $class, @args) = @_;
+	
+	if ( my $ref = ref($class) )
+	{
+		if ($ref ne 'CODE')
+		{
+			require overload;
+			require Scalar::Util;
+			require Carp;
+			
+			Carp::croak("Cannot construct instance from reference $class")
+				unless Scalar::Util::blessed($class);
+			
+			Carp::croak("Cannot construct instance from object $class")
+				unless overload::Method($class, '&{}');
+		}
+		
+		return $class->(@args);
+	}
+	
 	$class->$CONSTRUCTOR(@args);
 }
 
@@ -61,6 +80,8 @@ This role consists of a single method:
       my (undef, $class, @args) = @_;
       $class->new(@args);
    }
+
+(Actually, since 0.006, it's a little more complex.)
 
 =begin trustme
 
@@ -151,6 +172,20 @@ You can apply it to other classes using:
 
    package MyClass;
    use MooseX::ConstructInstance -with;
+
+As of version 0.006 of MooseX::ConstructInstance, C<< $class >> may be
+a coderef or a blessed object overloading C<< &{} >>. The
+C<construct_instance> method acts a bit like this:
+
+   sub construct_instance {
+      my (undef, $class, @args) = @_;
+      if ( is_codelike($class) ) {
+         return $class->(@args);
+      }
+      else {
+         $class->new(@args);
+      }
+   }
 
 =head1 FAQ
 

@@ -1,6 +1,6 @@
 NAME
-    MooseX::ConstructInstance - small wrapper method for instantiating
-    helper objects
+    MooseX::ConstructInstance - small wrapper method for instantiating helper
+    objects
 
 SYNOPSIS
     This role consists of a single method:
@@ -9,6 +9,8 @@ SYNOPSIS
           my (undef, $class, @args) = @_;
           $class->new(@args);
        }
+
+    (Actually, since 0.006, it's a little more complex.)
 
 DESCRIPTION
     Normally you would build an LWP::UserAgent something like this:
@@ -60,8 +62,8 @@ DESCRIPTION
 
     MooseX::ConstructInstance can be used to apply policies such as:
 
-    *   If $foo has a "dbh" attribute, and it constructs an object $bar,
-        then $bar should inherit $foo's database handle.
+    *   If $foo has a `dbh` attribute, and it constructs an object $bar, then
+        $bar should inherit $foo's database handle.
 
     *   All node objects must be have "backlinks" to the parent node that
         created them.
@@ -84,8 +86,22 @@ DESCRIPTION
        package MyClass;
        use MooseX::ConstructInstance -with;
 
+    As of version 0.006 of MooseX::ConstructInstance, $class may be a coderef
+    or a blessed object overloading `&{}`. The `construct_instance` method
+    acts a bit like this:
+
+       sub construct_instance {
+          my (undef, $class, @args) = @_;
+          if ( is_codelike($class) ) {
+             return $class->(@args);
+          }
+          else {
+             $class->new(@args);
+          }
+       }
+
 FAQ
-  What if I need to use a constructor which is not called "new"?
+  What if I need to use a constructor which is not called `new`?
     Aye; there's the rub.
 
     For now, this works, though it's not an especially elegant solution...
@@ -109,8 +125,8 @@ AUTHOR
 COPYRIGHT AND LICENCE
     This software is copyright (c) 2012-2013 by Toby Inkster.
 
-    This is free software; you can redistribute it and/or modify it under
-    the same terms as the Perl 5 programming language system itself.
+    This is free software; you can redistribute it and/or modify it under the
+    same terms as the Perl 5 programming language system itself.
 
 DISCLAIMER OF WARRANTIES
     THIS PACKAGE IS PROVIDED "AS IS" AND WITHOUT ANY EXPRESS OR IMPLIED
